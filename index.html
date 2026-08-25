@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#07101a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="description" content="Pulse 5G Network — executive interactive private 5G presentation">
+  <title>Pulse 5G Network</title>
+  <link rel="preconnect" href="https://tile.openstreetmap.org" crossorigin>
+  <link rel="preconnect" href="https://unpkg.com" crossorigin>
+  <link rel="stylesheet" href="assets/css/presentation.css">
+  <link rel="stylesheet" href="assets/css/hosted-premium.css">
+</head>
+<body>
+  <div class="bootScreen" aria-hidden="true">
+    <div class="bootMark">
+      <div class="bootBrands">
+        <img src="assets/images/brand/e-logo.webp" alt="">
+        <span class="bootDivider"></span>
+        <img src="assets/images/brand/csc-logo.webp" alt="">
+      </div>
+      <div class="bootTitle">Pulse 5G Network</div>
+      <div class="bootSub">Private • Resilient • Mission-ready</div>
+      <div class="bootTrace"></div>
+    </div>
+  </div>
+
+  <div id="app">
+    <div class="topbar">
+      <div class="brand" aria-label="Programme branding">
+        <img class="eLogo" src="assets/images/brand/e-logo.webp" alt="e&">
+        <span class="brandDivider"></span>
+        <img class="cLogo" src="assets/images/brand/csc-logo.webp" alt="CSC">
+      </div>
+      <div class="navzone"><div class="navrail" id="navRail" aria-label="Section navigation"></div></div>
+      <div class="actions">
+        <button class="iconbtn" id="themeBtn" type="button" title="Theme" aria-label="Toggle theme">◐</button>
+        <button class="iconbtn" id="langBtn" type="button" title="Language" aria-label="Toggle language">AR</button>
+        <button class="iconbtn" id="fullBtn" type="button" title="Fullscreen" aria-label="Toggle fullscreen">⤢</button>
+      </div>
+      <div class="deckProgress" id="deckProgressBar" aria-hidden="true"><span></span></div>
+    </div>
+    <div class="stage"><div id="viewport"><div id="slides"></div><button class="edgeNav edgeNavPrev" id="edgePrev" type="button" aria-label="Previous slide"><span>‹</span></button><button class="edgeNav edgeNavNext" id="edgeNext" type="button" aria-label="Next slide"><span>›</span></button></div></div>
+  </div>
+  <div id="opsPortal" class="opsPortal" aria-hidden="true"></div>
+  <div class="hostedBadge" id="hostedStatus" aria-live="polite"></div>
+
+  <script src="assets/js/content.js"></script>
+  <script src="assets/js/assets.js"></script>
+  <script src="assets/js/presentation.js"></script>
+  <script src="assets/js/hosted-enhancements.js"></script>
+</body>
+</html>
